@@ -1,0 +1,133 @@
+/* Import Google Fonts - Playfair Display (Elegant Serif), Poppins (Clean Sans-serif) */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Starry Night Gradient Background */
+    background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+    color: #f0f0f0; /* Light text for dark background */
+    overflow-x: hidden;
+}
+
+.container {
+    padding: 20px;
+    max-width: 750px;
+    width: 90%;
+}
+
+.message-card {
+    background: rgba(44, 83, 100, 0.95); /* Semi-transparent deep blue */
+    border-radius: 20px;
+    /* Subtle metallic shadow effect */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 0 5px rgba(255, 255, 255, 0.05) inset;
+    padding: 50px;
+    text-align: center;
+    backdrop-filter: blur(5px); /* Soft blur effect */
+}
+
+.pre-heading {
+    font-size: 1.1em;
+    color: #adb5bd;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.main-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    color: #ffcc00; /* Gold/Amber accent */
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Shimmer effect */
+}
+
+.name {
+    font-weight: 700;
+}
+
+.countdown {
+    font-size: 2em;
+    font-weight: 600;
+    color: #4ecdc4; /* Cyan/Teal accent */
+    margin-bottom: 40px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.main-message {
+    font-size: 1.3em;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    color: #e9ecef;
+    text-align: center;
+    font-style: italic; /* Adds elegance */
+}
+
+.reveal-btn {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.4);
+}
+
+.reveal-btn:hover {
+    background-color: #ffdb4d;
+    transform: scale(1.03);
+}
+
+.secret-message {
+    margin-top: 25px;
+    padding: 25px;
+    border: 2px solid #4ecdc4; /* Teal border */
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    font-style: normal;
+    font-size: 1.1em;
+    color: #f0f0f0;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.6s ease-in-out, max-height 0.6s ease-in-out;
+    text-align: left;
+}
+
+.secret-message.revealed {
+    opacity: 1;
+    max-height: 300px;
+}
+
+.signature {
+    margin-top: 50px;
+    text-align: right;
+    font-size: 1.1em;
+    color: #adb5bd;
+}
+
+.sender {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.7em;
+    color: #ffcc00;
+    margin-top: -10px;
+    font-weight: 700;
+}
+
+/* Confetti (Star/Shine effect) */
+.confetti {
+    /* ... (CSS from previous example, but adjust colors to match the theme) ... */
+    background-color: #ffcc00;
+    border-radius: 2px; /* Square/Star shape */
+    box-shadow: 0 0 5px #ffcc00;
+}
+.confetti:nth-child(2n) { background-color: #4ecdc4; } 
+.confetti:nth-child(3n) { background-color: #ffffff; }
